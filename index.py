@@ -24,7 +24,7 @@ def add():
 
 @app.route("/sub")
 def sub():
-    number = str(Calc.add(10, 25))
+    number = str(Calc.sub(10, 25))
     return number
 
 
