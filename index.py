@@ -12,6 +12,7 @@ class Calc:
     def sub(x, y):
         return x - y
 
+
 @app.route("/")
 def home():
     return "hello"
@@ -21,6 +22,7 @@ def home():
 def add():
     number = str(Calc.add(10, 25))
     return number
+
 
 @app.route("/sub")
 def sub():
