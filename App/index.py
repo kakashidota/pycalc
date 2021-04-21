@@ -2,6 +2,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
+
 class Calc:
     @staticmethod
     def add(x, y):
@@ -19,3 +20,7 @@ def home():
 
 
 app.run()
+# py -m pip freeze > requirements.txt // Fixar en req
+# py -m flake8 --statistics //linter
+# py -m pip install flake8 pytest pytest-cov flask// paket som behövs
+# pytest -v --cov kör tester
